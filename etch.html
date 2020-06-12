@@ -9,16 +9,30 @@
 	<title> Etch-a-Sketch </title>
 </head>
 
+<!-- Use style to set the width of the div containing the drawing surface. --> 
 <style>
-#container {
-  width: 900px;
-}
+	#container {
+  	width: 960px;
+	}
 </style>
 
 <body>
+	<!-- Create a prompt that takes in the number of columns in the etch-a-sketch. -->
 
+
+	<br>
+	<hr>
+	<!-- Make a button that refreshes the page to reset etch-a-sketch surface. -->
+	<div id="button">
+		<button onClick="window.location.reload();">RESET</button>
+		<br>
+	</div>
+
+	<br>
+				
+	<!-- Create container that will house the drawing surface from the .js file. -->
 	<div id="container">
-	<script type="text/javascript" src="etch.js"></script>
+		<script type="text/javascript" src="etch.js"></script>
 	</div>
 
 </body>
